@@ -139,7 +139,7 @@ h1, h2, h3, ul, p {
 .hiro-title {
   margin-bottom: 30px;
 
-  color: var(--secondery-text-color);
+  color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
