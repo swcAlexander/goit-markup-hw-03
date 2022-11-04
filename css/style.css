@@ -1,3 +1,4 @@
+/* --------------------standart-work-blank------------------- */
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -8,26 +9,18 @@
   --border-color: #eeeeee;
 }
 
-body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
-
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0, 03em;
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
 }
 
-h1, h2, h3, ul, p {
+ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.header {
-  background-color: var(--primary-white-color);
-}
-
 .list {
   text-decoration: none;
-  list-style-type: none;
 }
 
 .hidden {
@@ -37,17 +30,36 @@ h1, h2, h3, ul, p {
   height: 1px;
   margin: -1px;
 }
-.container {
+
+.centred {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/* --------------------body-and-header------------------- */
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0, 03em;
+}
+
+.header {
+  background-color: var(--primary-white-color);
+}
+
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.footer > .container {
-  display: block;
 }
 
 .container-margin {
@@ -106,9 +118,8 @@ h1, h2, h3, ul, p {
   padding-bottom: 32px;
   
 }
+
 .header-nav-contacts a {
-
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -124,6 +135,8 @@ h1, h2, h3, ul, p {
 .header-nav-menu a.current {
   color: var(--accent-color);
 }
+
+/* --------------------hiro-section------------------- */
 
 .hiro-section {
   display: flex;
@@ -168,13 +181,7 @@ h1, h2, h3, ul, p {
   letter-spacing: 0.06em;
 }
 
-.team-section-container,
-.work-section,
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+/* --------------------common-section-styles------------------- */
 
 .section-title {
   margin-bottom: 50px;
@@ -185,12 +192,13 @@ h1, h2, h3, ul, p {
   text-align: center;
 }
 
-
-.skills-section-list,
-.work-section-list,
-.team-list {
-  display: flex;
+.skills-section-list li+li,
+.work-section-list li+li,
+.team-list li+li {
+  margin-left: 30px;
 }
+
+/* -------------------------skills-section--------------------- */
 
 .skills-title {
   margin-bottom: 10px;
@@ -209,11 +217,7 @@ h1, h2, h3, ul, p {
   letter-spacing: 0.03em;
 }
 
-.skills-section-list li + li,
-.work-section-list li + li,
-.team-list li + li {
-  margin-left: 30px;
-}
+/* -------------------------team-section--------------------- */
 
 .team-section {
   padding-top: 94px;
@@ -246,6 +250,8 @@ h1, h2, h3, ul, p {
   line-height: 1.18;
   letter-spacing: 0.03em;
 }
+
+/* -------------------------portfolio-section--------------------- */
 
 .button-list {
   display: flex;
@@ -288,6 +294,7 @@ h1, h2, h3, ul, p {
 .portfolio-list-li {
   margin-left: 30px;
   margin-bottom: 30px;
+  border: 1px solid var(--border-color);
 }
 .portfolio-list-li:nth-child(3n + 1) {
   margin-left: 0;
@@ -315,9 +322,6 @@ h1, h2, h3, ul, p {
   letter-spacing: 0.03em;
 }
 
-.portfolio-list li {
-  border: 1px solid var(--border-color);
-}
 .portfolio-list img {
   width: 100%;
 }
@@ -326,6 +330,8 @@ h1, h2, h3, ul, p {
 .portfolio-list p {
   margin-left: 24px;
 }
+
+/* -------------------------footer--------------------- */
 
 .footer {
   background-color: var(--accent-background-color);
